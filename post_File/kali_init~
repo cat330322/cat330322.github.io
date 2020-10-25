@@ -1,0 +1,23 @@
+# kali_init
+#清华大学
+deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
+deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
+
+apt-get install fcitx 
+apt-get install fcitx-googlepinyin
+
+Emacs markdown
+
+---
+
+新版本乱码问题
+
+apt install locales
+
+locale -a dpkg-reconfigure locales 选择字体
+
+apt install xfonts-intl-chines
+
+apt install ttf-wqy-microhei
+
+reoot
