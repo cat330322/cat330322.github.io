@@ -1,7 +1,5 @@
-###Gentoo
-
+#Gentoo
 ---
-
 
 ＃使用 parted 分区工具
 
