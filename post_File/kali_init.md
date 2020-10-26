@@ -1,9 +1,13 @@
 # kali_init
 ---
+
 ssh-keygen -t rsa //生成密钥
+
 ---
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
 deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
+
+---
 
 apt-get install fcitx 
 apt-get install fcitx-googlepinyin
