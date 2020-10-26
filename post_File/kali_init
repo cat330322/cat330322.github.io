@@ -31,3 +31,12 @@ reoot
 apt install open-vm-tools
 
 apt install open-vm-tools-desktop
+
+---
+
+#iso_yuan
+
+sudo apt install apt-transport-https ca-certificates
+
+---
+

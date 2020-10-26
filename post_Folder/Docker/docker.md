@@ -2,6 +2,16 @@
 
 ---
 
+/etc/docker/daemon.json
+
+{
+  "registry-mirrors" :[     
+    "http://docker.mirrors.ustc.edu.cn",
+    "http://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com"]
+}
+
+---
 
 docker run -dit --name mynginx -p 80::80  nginx:latest
 
