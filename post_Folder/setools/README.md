@@ -1,3 +1,0 @@
-# setools
-
-source: `{{ page.path }}`

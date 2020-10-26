@@ -1,3 +1,0 @@
-# notes
-
-source: `{{ page.path }}`
