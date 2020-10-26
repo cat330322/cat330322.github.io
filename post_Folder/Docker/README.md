@@ -1,4 +1,0 @@
-# Docker
-
-
-source: `{{ page.path }}`

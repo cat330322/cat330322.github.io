@@ -1,3 +1,0 @@
-# Dockerfile
-
-source: `{{ page.path }}`
