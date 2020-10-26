@@ -1,9 +1,1 @@
-# tools
----
-
-mtr
-
-tshark
-
-htop
 

@@ -127,16 +127,6 @@ m+x restart-emacs
 
 ---
 
-Emacs高手修炼
-
-启动 Emacs，然后查看版本。 M-x emacs-version
-
-或者在命令行中查看版本。 emacs --version
-
-C，代表 CTRL 键
-
-M，代表 Meta 键，往往是 ALT（部分键盘是 ESC）
-
 C-n，下一行（速记：Nextline）
 
 C-p，前一行（速记：Previous line）
@@ -812,6 +802,4 @@ C-x t 2 ;; 新建Tab
       
       b ;; 在新Tab中打开Buffer
       
-未完待续……
-
 

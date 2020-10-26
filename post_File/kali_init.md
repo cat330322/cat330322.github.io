@@ -5,6 +5,7 @@ ssh-keygen -t rsa //生成密钥
 
 ---
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
+
 deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
 
 ---
@@ -44,3 +45,6 @@ sudo apt install apt-transport-https ca-certificates
 
 ---
 
+# tools
+
+mtr、tshark、htop
