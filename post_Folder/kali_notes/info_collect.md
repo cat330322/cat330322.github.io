@@ -20,4 +20,6 @@ Masscan 10.11.0.0/16 --top-ports 100 -rate 100000
 masscan 0.0.0.0/0 -p0-65535 -rate 10000000
 
 ---
-Maltego
+
+nikto -h <IP or hostname>
+
