@@ -1,7 +1,7 @@
 # kali_init
 ---
 
-ssh-keygen -t rsa //生成密钥
+ssh-keygen -t rsa 
 
 ---
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
@@ -21,7 +21,7 @@ Emacs markdown
 
 apt install locales
 
-locale -a dpkg-reconfigure locales 选择字体
+locale -a dpkg-reconfigure locales 
 
 apt install xfonts-intl-chines
 
@@ -31,7 +31,7 @@ reoot
 
 ---
 
-虚拟机
+vmware_
 
 apt install open-vm-tools
 
@@ -39,12 +39,12 @@ apt install open-vm-tools-desktop
 
 ---
 
-#iso_yuan
+#https use iso_yuan
 
 sudo apt install apt-transport-https ca-certificates
 
 ---
 
-# tools
+# common tools
 
 mtr、tshark、htop
