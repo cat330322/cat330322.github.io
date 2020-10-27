@@ -41,6 +41,33 @@ https use iso_yuan
 sudo apt install apt-transport-https ca-certificates
 
 ---
+
 common tools
 
 mtr、tshark、htop
+
+---
+
+sudo pacman-mirrors -i -c China -m rank 
+
+sudo pacman -Syy
+
+pacman -S archlinux-keyring
+
+/etc/pacman.conf
+
+[archlinuxcn]
+
+SigLevel = Optional TrustedOnly
+
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
+
+sudo pacman -S archlinuxcn-keyring
+
+virtualbox-about kernel
+
+/sbin/rcvboxdrv setup
+
+pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
+
+---

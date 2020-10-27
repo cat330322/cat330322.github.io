@@ -1,3 +1,0 @@
-# webscan
-
-source: `{{ page.path }}`

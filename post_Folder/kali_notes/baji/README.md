@@ -1,3 +1,0 @@
-# baji
-
-source: `{{ page.path }}`
