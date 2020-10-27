@@ -193,9 +193,7 @@ C-h f ;速记 Help Function
 
 (scroll-bar-mode -1)
 
-重启 Emacs 看看实际的效果。
 
-Emacs 配置初体验
 
 9 认识配置文件
 
@@ -216,8 +214,6 @@ Emacs 配置文件的位置，会按照一下顺序去查找：
 已经体验了关掉菜单栏、工具栏、滚动条等。现在尝试关掉启动界面：
 
 (setq inhibit-startup-screen t)
-
-重启 Emacs 看看？
 
 
 软件源
@@ -314,8 +310,10 @@ unless (package-installed-p 'use-package)
     (setq sml/theme 'respectful)
     
     (sml/setup))
+    
+---
 
-##### 16 工程化管理配置（1）功能拆分
+16 工程化管理配置（1）功能拆分
 
 到此为止，在~/.emacs 中配置了很多的内容，开始显得很乱：
 
@@ -335,7 +333,9 @@ lisp/init-ui.el用于存放界面主题相关配置
 
 如何在初始化文件中把它们联系在一起（调用）？
 
-##### 17 工程化管理配置（2）文件加载与调用
+---
+
+工程化管理配置（2）文件加载与调用
 
 先设置加载的目标目录到 load-path 中。
 
@@ -351,7 +351,9 @@ lisp/init-ui.el用于存放界面主题相关配置
 
 require 'init-ui
 
-##### 18 关于自定义的配置
+---
+
+关于自定义的配置
 
 建议写入一个单独的文件，对外开源的时候，该文件不被提交到 Git 中。如，custom.el
 
@@ -361,7 +363,9 @@ require 'init-ui
     
 这样就会把通过图形界面做的一些配置，写入到这里了。
 
-##### 19 操作系统判断
+---
+
+操作系统判断
 
 后面的部分配置会因操作系统不同而产生不同配置代码，所以有必要对操作系统进行判断。
 
@@ -383,7 +387,9 @@ require 'init-ui
     
     (setq mac-option-modifier 'none))
     
-21 通过修改字体解决 Windows 上 Emacs 的卡顿
+---
+
+通过修改字体解决 Windows 上 Emacs 的卡顿
 
 (use-package emacs
 
@@ -406,7 +412,9 @@ require 'init-ui
         
   (set-face-attribute 'default nil :font "Source Code Pro for Powerline 11")))
   
-22 建议增加的一点启动配置
+---
+
+建议增加的一点启动配置
 
 设置系统的编码，避免各处的乱码。
 
