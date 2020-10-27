@@ -144,7 +144,8 @@ UPDATE wp_users SET user_pass = MD5( '123456' ) WHERE user_login = 'admin';
 # docker registry
 
 ---
-###docker本地仓库搭建
+
+# docker本地仓库搭建
 
 docker pull registry
 
@@ -194,6 +195,7 @@ docker rmi 127.0.0.1:5000  //busybox-test 删除镜像
 docker pull  127.0.0.1:5000/busybox-test //从本地镜像下载。
 
 ---
+
 #dokcer-bind
 
 docker-sameersbn/bind

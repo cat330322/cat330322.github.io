@@ -1,9 +1,10 @@
-# kali_init
+# init
 ---
 
 ssh-keygen -t rsa 
 
 ---
+
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
 
 deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
@@ -12,7 +13,6 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-
 
 apt-get install fcitx 
 apt-get install fcitx-googlepinyin
-
 
 ---
 
@@ -36,12 +36,11 @@ apt install open-vm-tools-desktop
 
 ---
 
-#https use iso_yuan
+https use iso_yuan
 
 sudo apt install apt-transport-https ca-certificates
 
 ---
-
-# common tools
+common tools
 
 mtr、tshark、htop

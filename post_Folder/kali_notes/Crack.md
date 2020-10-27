@@ -1,8 +1,6 @@
-# crack-
+# Crack
 ---
-#hydra 网络账号破解神器
-
----
+hydra 
 
 Hydra –L 文件路径 –P 密码路径 t 线程 –vV 详细显示 –o 指定生成路径 –f 找到密码就停止 –e ns 空密码和指定密码试探 ip service 爆破服务
 
@@ -72,9 +70,7 @@ John the Ripper支持字典破解方式和暴力破解方式
 
 使用 unshadow 命令组合 /etc/passwd 和 /etc/shadow ，组合成 test_passwd 文件。其他 test_passwd 就是 /etc/passwd 和 /etc/shadow 的简单组合: 
 
- unshadow  /etc/passwd  /etc/shadow >  test_passwd 
-
-
+unshadow  /etc/passwd  /etc/shadow >  test_passwd 
 
 然后用 John 破解密码了。我们可以使用 John 自带的密码字典，位于 /usr/share/john/password.lst ，也可以使用我们自己的密码字典。用John自带的密码字典为例： 
 
