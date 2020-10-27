@@ -1,4 +1,4 @@
-# google语法
+# google
 
 ---
 

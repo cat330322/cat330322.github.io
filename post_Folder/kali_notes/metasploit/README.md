@@ -1,3 +1,0 @@
-# metasploit
-
-source: `{{ page.path }}`
