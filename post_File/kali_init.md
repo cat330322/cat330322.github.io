@@ -13,11 +13,8 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-
 apt-get install fcitx 
 apt-get install fcitx-googlepinyin
 
-Emacs markdown
 
 ---
-
-新版本乱码问题
 
 apt install locales
 
