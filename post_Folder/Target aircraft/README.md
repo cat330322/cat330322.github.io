@@ -1,3 +1,3 @@
-# 靶机
+# Target aircraft
 ---
 source: `{{ page.path }}`

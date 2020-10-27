@@ -1,5 +1,0 @@
-# infomation gathering
----
-nmap
-
-masscan

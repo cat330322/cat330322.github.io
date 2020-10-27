@@ -1,3 +1,0 @@
-# crack
-
-source: `{{ page.path }}`

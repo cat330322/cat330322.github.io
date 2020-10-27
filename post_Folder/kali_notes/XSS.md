@@ -1,6 +1,8 @@
-# XSS-BeEF-XSS跨站脚本攻击
+# XSS
 
 ---
+BeEF-XSS跨站脚本攻击
+
 
 BeEF-XSS是一款非常强大的web框架攻击平台，集成了许多payload，
 

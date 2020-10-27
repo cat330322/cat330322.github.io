@@ -1,6 +1,30 @@
-# DDOS-Hping
+# DDOS
+---
+
+# DDOS-Attack
+
+git clone https://github.com/HaMrX/DDOs-Attack
+
+ls -l
+
+cd DDOs-Attack/
+
+
+chmod +x ddos-attack.py
+
+执行DDOS攻击脚本
+
+python ddos-attack.py
+
+设置攻击参数（需要攻击的网站域名、端口号）
+
+命令：IP Target:需要攻击的域名
+
+命令：Port：端口号
 
 ---
+# DDOS-Hping
+
 
 Hping是一个命令行下使用的TCP/IP数据包组装/分析工具，其命令模式很像Unix下的ping命令，但是它不是只能发送ICMP回应请求，它还可以支持TCP、UDP、ICMP和RAW-IP协议，它有一个路由跟踪模式，能够在两个相互包含的通道之间传送文件。Hping常被用于检测网络和主机，其功能非常强大，可在多种操作系统下运行，如Linux，FreeBSD，NetBSD，OpenBSD，Solaris，MacOs X，Windows。
 

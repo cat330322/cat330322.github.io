@@ -1,3 +1,0 @@
-# osscan
-
-source: `{{ page.path }}`
