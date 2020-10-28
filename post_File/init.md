@@ -71,3 +71,7 @@ virtualbox-about kernel
 pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
 
 ---
+
+tools
+
+whireshark htop mtr 

@@ -11,6 +11,11 @@
     "http://hub-mirror.c.163.com"]
 }
 
+
+sudo systemctl daemon-reload
+     
+sudo systemctl restart docker
+
 ---
 
 docker run -dit --name mynginx -p 80::80  nginx:latest
@@ -28,20 +33,6 @@ sudo groupadd docker #添加docker用户组
 sudo gpasswd -a $USER docker #将当前登陆用户加入到docker用户组中
 
 newgrp docker #更新用户组
-
----
-
-###docker 加速
-
-# /etc/docker/daemon.json
-
-{
-
-    "registry-mirrors": ["http://hub-mirror.c.163.com"]
-    
-}
-
-systemctl restart docker.service
 
 ---
 
@@ -230,3 +221,12 @@ kill -9 pid
 /usr/bin/perl /usr/share/webmin/miniserv.pl /etc/webmin/miniserv.conf 启动进程
 
 
+---
+
+docker pull secfa/docker-awvs
+
+docker run -it -d -p 13443:3443 secfa/docker-awvs
+
+awvs13 username:admin@admin.com
+
+awvs13 password: Admin123

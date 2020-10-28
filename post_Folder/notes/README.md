@@ -1,3 +1,3 @@
-# kali_notes
+# notes
 
 source: `{{ page.path }}`
