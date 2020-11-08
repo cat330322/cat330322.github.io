@@ -5,6 +5,16 @@ ssh-keygen -t rsa
 
 ---
 
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
+
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
+
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
+
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
+
+---
+
 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
 
 deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free 
@@ -12,6 +22,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-
 ---
 
 apt-get install fcitx 
+
 apt-get install fcitx-googlepinyin
 
 ---

@@ -5,10 +5,15 @@
 /etc/docker/daemon.json
 
 {
+
   "registry-mirrors" :[     
+  
     "http://docker.mirrors.ustc.edu.cn",
+    
     "http://registry.docker-cn.com",
+    
     "http://hub-mirror.c.163.com"]
+    
 }
 
 
