@@ -21,6 +21,10 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-
 
 ---
 
+
+
+---
+
 apt-get install fcitx 
 
 apt-get install fcitx-googlepinyin
@@ -50,6 +54,14 @@ apt install open-vm-tools-desktop
 https use iso_yuan
 
 sudo apt install apt-transport-https ca-certificates
+
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster main contrib non-free
+
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-updates main contrib non-free
+
+deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib non-free
+
+deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free
 
 ---
 
@@ -86,3 +98,8 @@ pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
 tools
 
 whireshark htop mtr 
+
+---
+
+
+

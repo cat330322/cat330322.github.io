@@ -235,3 +235,32 @@ docker run -it -d -p 13443:3443 secfa/docker-awvs
 awvs13 username:admin@admin.com
 
 awvs13 password: Admin123
+
+---
+
+docker run -d -p 443:443 -e PUBLIC_HOSTNAME=此处填你宿主机IP --name  openvas mikesplain/openvas 
+
+--cpus=4
+
+信息收集
+
+openvasmd --create-user=admin
+
+User created with password '462972b7-02fc-4a0b-a585-e86801cc52b3'.
+
+openvasmd --create-user=用户名 *//创建用户*
+
+openvasmd --delete-user=用户名 *//删除用户*
+
+openvasmd --user=admin --new-password=新密码 *//直接修改admin用户的密码*
+
+---
+
+docker pull imdevops/hfish
+
+docker run -d --name hfish -p 21:21 -p 22:22 -p 23:23 -p 69:69 -p 3306:3306 -p 5900:5900 -p 6379:6379 -p 8080:8080 -p 8081:8081 -p 8989:8989 -p 9000:9000 -p 9001:9001 -p 9200:9200 -p 11211:11211 –-net=bridge-local –-ip=172.28.xx.xx --restart=always imdevops/hfish:latest 
+
+docker run -d --name hfish -p  23:23 -p 69:69 -p 3306:3306 -p 5900:5900 -p 6379:6379 -p 8080:8080 -p 8081:8081 -p 8989:8989 -p 9000:9000 -p 9001:9001 -p 9200:9200 -p 11211:11211  --restart=always imdevops/hfish:latest 
+
+---
+
