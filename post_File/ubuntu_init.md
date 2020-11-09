@@ -1,4 +1,4 @@
-# init
+# ubuntu_init
 ---
 
 ssh-keygen -t rsa 
@@ -86,6 +86,8 @@ SigLevel = Optional TrustedOnly
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 
 sudo pacman -S archlinuxcn-keyring
+
+---
 
 virtualbox-about kernel
 
