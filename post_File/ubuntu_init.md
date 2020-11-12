@@ -122,6 +122,8 @@ tools
 
 whireshark htop mtr 
 
+Ngrok
+
 ---
 
 [root@host sbin]# echo $PATH

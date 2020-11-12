@@ -12,4 +12,8 @@
 
 5、内核、bootloader
 
+---
+
+交叉编译环境、 bootloader 、kernel、rootfs
+
 
