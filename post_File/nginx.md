@@ -4,23 +4,23 @@ nginx
 
 临时生效
 
-# ulimit  -n 10240
+ulimit  -n 10240
 
-# echo 10240 > /proc/sys/net/core/somaxconn
+echo 10240 > /proc/sys/net/core/somaxconn
 
-# echo 0 > /proc/sys/net/ipv4/tcp_syncookies
+echo 0 > /proc/sys/net/ipv4/tcp_syncookies
 
-# echo 1 > /proc/sys/net/ipv4/tcp_tw_reuse
+echo 1 > /proc/sys/net/ipv4/tcp_tw_reuse
 
 永久生效
 
-# vi /etc/security/limits.conf
+vi /etc/security/limits.conf
 
 root soft nofile 10240
 
 root hard nofile 10240
 
-# vi /etc/sysctl.conf
+vi /etc/sysctl.conf
 
 net.core.somaxconn=10240
 
@@ -36,7 +36,7 @@ worker_connections  10240;
 
 三、测试
 
-# ab -c 10000 -n 10000 http://www.you-nginx-ip.com
+ab -c 10000 -n 10000 http://www.you-nginx-ip.com
 
 四、http和https的性能区别
 
