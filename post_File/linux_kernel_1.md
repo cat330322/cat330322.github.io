@@ -1,4 +1,4 @@
-linux-kernel_1
+linux_kernel_1
 ---
 
 相关依赖
