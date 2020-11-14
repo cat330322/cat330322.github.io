@@ -1,4 +1,15 @@
+渗透ceshi
+
+---
+
+漏洞发布网站
  
+https://www.seebug.org/
+
+https://www.exploit-db.com/
+
+---
+
 Firefox下
 
     Firebug，调试js，HTTP请求响应观察，Cookie，DOM树观察等；GreaseMonkey，自己改了个Cookie修改脚本，其他同学可以用这款：Original Cookie Injector for Greasemonkey；Noscript，进行一些js的阻断；AutoProxy，翻墙必备；
