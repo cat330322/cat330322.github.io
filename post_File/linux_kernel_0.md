@@ -21,3 +21,30 @@ pmap
 --
 
 vmstat
+
+---
+
+lsmod 驱动
+
+elasticsearch
+
+insmod helloDev.ko
+
+dmesg -c
+
+---
+
+sudo make mrproper 清楚编译过程产生的中间文件，刚刚解压状态
+
+sudo make clean 清楚中间文件
+
+sudo make menuconfig 配置内核
+
+
+---
+
+kernel-book 推荐
+
+Linux内核设计与实现
+
+linux device drivers
