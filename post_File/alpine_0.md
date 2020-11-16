@@ -25,4 +25,16 @@ https://mirrors.ustc.edu.cn/alpine/latest-stable/community
 
 ---
 
-apk u
+rc-status
+
+rc-update add docker boot #增加一个服务
+
+rc-update del docker boot #删除一个服务
+
+rc-service sshd start #启动一个服务
+
+rc-service sshd stop  #停止一个服务
+
+rc-service sshd restart  #重启一个服务
+
+openrc single #更改为single运行级
