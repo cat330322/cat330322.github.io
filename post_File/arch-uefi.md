@@ -17,21 +17,21 @@ sda2 +200M
 
 sda3 all
 
-# mkfs.fat -F32 /dev/sda1
+mkfs.fat -F32 /dev/sda1
 
-# mkfs.ext4 /dev/sda2 
+mkfs.ext4 /dev/sda2 
 
-# mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda3
 
-# mount /dev/sda3 /mnt
+mount /dev/sda3 /mnt
 
-# mkdir /mnt/boot
+mkdir /mnt/boot
 
-# mount /dev/sda2 /mnt/boot
+mount /dev/sda2 /mnt/boot
 
-# mkdir /mnt/boot/EFI
+mkdir /mnt/boot/EFI
 
-# mount /dev/sda1 /mnt/boot/EFI
+mount /dev/sda1 /mnt/boot/EFI
 
 pacstrap -i /mnt base base-devel linux linux-firmware
 
