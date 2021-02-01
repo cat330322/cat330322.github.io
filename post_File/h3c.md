@@ -44,6 +44,18 @@ display link-aggregation verbose Bridge-Aggregation xx
 
 ---
 
+console
+
+sys
+
+user-interface aux 0
+
+authentication-mode password
+
+set authentication password simp co
+
+---
+
 ###wlan
 
 wlan rename-ap old new
