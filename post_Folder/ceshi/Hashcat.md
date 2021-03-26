@@ -1,2 +1,2 @@
-#Hashcat
+# Hashcat
 ---
