@@ -1,4 +1,4 @@
-# fdroid
+#fdroid
 ---
 
 apt update && apt upgrade
@@ -27,8 +27,14 @@ passwd
 
 pgk upgrade
 
-pkg install openssh
+pkg install openssh 8022
 
 sshd
 
 pkill ssh
+
+apt install tsu
+
+tsu
+
+echo "sshd" >> ~/.bashrc auto-ssh
