@@ -1,3 +1,1 @@
 # stydy
-
-source: `{{ page.path }}`
