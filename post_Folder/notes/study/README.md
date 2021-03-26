@@ -1,0 +1,3 @@
+# stydy
+
+source: `{{ page.path }}`

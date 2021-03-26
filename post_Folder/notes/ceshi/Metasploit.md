@@ -1,38 +1,10 @@
 #Metasploit
 ---
-search scanner type:auxiliary 搜索
-
-auxiliary/scanner/ftp/ftp_version        #发现内网ftp服务，基于默认21端口
-auxiliary/scanner/ssh/ssh_version        #发现内网ssh服务，基于默认22端口
-auxiliary/scanner/telnet/telnet_version  #发现内网telnet服务，基于默认23端口
-auxiliary/scanner/dns/dns_amp            #发现dns服务，基于默认53端口
-auxiliary/scanner/http/http_version      #发现内网http服务，基于默认80端口
-auxiliary/scanner/http/title             #探测内网http服务的标题
-auxiliary/scanner/smb/smb_version        #发现内网smb服务，基于默认的445端口   
-use auxiliary/scanner/mssql/mssql_schemadump  #发现内网SQLServer服务,基于默认的1433端口
-use auxiliary/scanner/oracle/oracle_hashdump  #发现内网oracle服务,基于默认的1521端口 
-auxiliary/scanner/mysql/mysql_version    #发现内网mysql服务，基于默认3306端口
-auxiliary/scanner/rdp/rdp_scanner        #发现内网RDP远程桌面服务，基于默认3389端口
-auxiliary/scanner/redis/redis_server     #发现内网Redis服务，基于默认6379端口
-auxiliary/scanner/db2/db2_version        #探测内网的db2服务，基于默认的50000端口
-auxiliary/scanner/netbios/nbname         #探测内网主机的netbios名字
-
-auxiliary/scanner/portscan/tcp           #基于tcp进行端口扫描(1-10000)
-auxiliary/scanner/portscan/syn           #基于syn进行端口扫描
-auxiliary/scanner/portscan/ack           #基于tcp的ack回复进行端口扫描，默认扫描1-10000端口
-
-
- search -S auxiliary ssh
-
-Metasploit扫描
-
-msf > nmap -v -sV 192.168.1.111　
-
-    进入框架：msfconsole
+进入框架：msfconsole
 
     使用search命令查找相关漏洞： search  ms17-010
 
-    使用use进入模块:  use exploit/windows/smb/ms17_010_eternalblue   
+    使用use进入模块:  use exploit/windows/smb/ms17_010_eternalblue
 
     使用info查看模块信息： info
 
@@ -45,7 +17,51 @@ msf > nmap -v -sV 192.168.1.111　
     攻击：exploit /  run
 
     后渗透阶段
+    
+exploit漏洞利用模块路径：/usr/share/metasploit-framework/modules/exploits
 
+payload模块路径：/usr/share/metasploit-framework/modules/payloads
+
+search scanner type:auxiliary 搜索
+
+auxiliary/scanner/ftp/ftp_version        #发现内网ftp服务，基于默认21端口
+
+auxiliary/scanner/ssh/ssh_version        #发现内网ssh服务，基于默认22端口
+
+auxiliary/scanner/telnet/telnet_version  #发现内网telnet服务，基于默认23端口
+
+auxiliary/scanner/dns/dns_amp            #发现dns服务，基于默认53端口
+
+auxiliary/scanner/http/http_version      #发现内网http服务，基于默认80端口
+
+auxiliary/scanner/http/title             #探测内网http服务的标题
+
+auxiliary/scanner/smb/smb_version        #发现内网smb服务，基于默认的445端口
+
+use auxiliary/scanner/mssql/mssql_schemadump  #发现内网SQLServer服务,基于默认的1433端口
+
+use auxiliary/scanner/oracle/oracle_hashdump  #发现内网oracle服务,基于默认的1521端口 
+
+auxiliary/scanner/mysql/mysql_version    #发现内网mysql服务，基于默认3306端口
+
+auxiliary/scanner/rdp/rdp_scanner        #发现内网RDP远程桌面服务，基于默认3389端口
+
+auxiliary/scanner/redis/redis_server     #发现内网Redis服务，基于默认6379端口
+
+auxiliary/scanner/db2/db2_version        #探测内网的db2服务，基于默认的50000端口
+
+auxiliary/scanner/netbios/nbname         #探测内网主机的netbios名字
+
+auxiliary/scanner/portscan/tcp           #基于tcp进行端口扫描(1-10000)
+
+auxiliary/scanner/portscan/syn           #基于syn进行端口扫描
+
+auxiliary/scanner/portscan/ack           #基于tcp的ack回复进行端口扫描，默认扫描1-10000端口
+
+search -S auxiliary ssh
+Metasploit扫描
+
+msf > nmap -v -sV 192.168.1.111　
 
 show exploits
 
