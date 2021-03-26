@@ -52,3 +52,4 @@ deb https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24 science stab
 编辑 $PREFIX/etc/apt/sources.list.d/game.list 修改为如下内容
 
 deb https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24 games stable
+
