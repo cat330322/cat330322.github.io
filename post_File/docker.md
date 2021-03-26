@@ -264,3 +264,9 @@ docker run -d --name hfish -p  23:23 -p 69:69 -p 3306:3306 -p 5900:5900 -p 6379:
 
 ---
 
+samba
+
+docker pull dperson/samba
+
+docker run -it --name samba -p 139:139 -p 445:445 -v //home/share:/mount -d dperson/samba -u "user;pass" -s "share;/mount/;yes;no;no;all;none"
+
