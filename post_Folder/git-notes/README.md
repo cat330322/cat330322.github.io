@@ -1,3 +1,3 @@
-# notes
+# git-notes
 
 source: `{{ page.path }}`

@@ -1,3 +1,7 @@
+21ftp
+
+nmap --script ftp-anon,ftp-bounce,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 10.11.1.111
+
 1. nmap -sT 192.168.96.4  //TCP连接扫描，不安全，慢
 
 2. nmap -sS 192.168.96.4  //SYN扫描,使用最频繁，安全，快
