@@ -140,5 +140,52 @@ ln -s /usr/sbin/* /usr/local/bin/
 
 ---
 
+/etc/netplan/00-installer-config.yaml
+
+network:
+
+  ethernets:
+  
+    enp0s3:
+    
+      dhcp4: true
+      
+  version: 2
+
+---
+
+network:
+
+  ethernets:
+  
+    enp0s3:
+    
+      dhcp4: true
+      
+    enp0s8:
+    
+      dhcp4: true
+      
+  version: 2
+
+---
+
+network:
+
+  version: 2
+  
+  renderer: networkd
+  
+  ethernets:
+  
+    ens160:
+    
+     addresses:
+     
+       - 10.200.0.237/24
+       
+     gateway4: 10.200.0.1
+     
+     nameservers:
 
 
