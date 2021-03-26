@@ -5,6 +5,8 @@ ssh-keygen -t rsa
 
 ---
 
+neofetch
+
 screenfetch
 
 ---
