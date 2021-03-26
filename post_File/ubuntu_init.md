@@ -5,6 +5,10 @@ ssh-keygen -t rsa
 
 ---
 
+screenfetch
+
+---
+
 sudo apt install apt-transport-https ca-certificates
 
 ---
