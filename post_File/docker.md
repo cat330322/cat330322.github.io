@@ -1,4 +1,4 @@
-#docker
+# docker
 
 ---
 
@@ -31,7 +31,7 @@ docker commit container-name  new-image-name
 
 ---
 
-### docker group
+docker group
 
 sudo groupadd docker #添加docker用户组
 
@@ -41,7 +41,7 @@ newgrp docker #更新用户组
 
 ---
 
-###alpine
+alpine
 
 docker run -it -p 80:80 alpine:latest 
 
@@ -52,14 +52,16 @@ apk update
 apk add nginx 
 
 ---
-### cp
+
+cp
 
 sudo docker cp host_path containerID:container_path
 
 sudo docker cp containerID:container_path host_path
 
 ---
-### dockerfile
+
+dockerfile
 
 FROM	基础镜像
 
@@ -87,7 +89,7 @@ MAINTAINER  管理者标识
 
 ---
 
-###docker network
+docker network
 
 docker network ls
 

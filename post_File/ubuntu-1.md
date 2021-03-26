@@ -1,4 +1,5 @@
-# ubuntu_init
+# ubuntu-01
+
 ---
 
 ssh-keygen -t rsa 
