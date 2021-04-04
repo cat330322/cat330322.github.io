@@ -9,7 +9,7 @@ git branch -M main
 
 git remote add origin git@github.com:cat330322/cat330322.github.io.git
 
-git push -u origin main
+git push -u origin master
 
 git status
 
