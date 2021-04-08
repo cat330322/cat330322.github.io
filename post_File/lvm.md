@@ -3,7 +3,7 @@ lvm分区
 
 umount /home 如果提示无法卸载，因为有进程占用/home，使用如下命令来终止占用进程
 
-fuser -m /home  
+fuser -m /home 
 
 如果依然无法卸载，使用以下命令：
 

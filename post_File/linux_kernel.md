@@ -43,8 +43,3 @@ sudo make menuconfig 配置内核
 
 ---
 
-kernel-book 推荐
-
-Linux内核设计与实现
-
-linux device drivers
