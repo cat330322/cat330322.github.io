@@ -23,6 +23,24 @@ sudo systemctl restart docker
 
 ---
 
+vim /etc/apt/sources.lst
+
+deb http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+
+deb-src http://mirrors.zju.edu.cn/kali kali-rolling main contrib non-free
+
+安装docker
+
+curl -fsSL http://mirrors.zju.edu.cn/docker-ce/linux/debian/gpg | apt-key add -
+ 
+echo 'deb http://mirrors.zju.edu.cn/docker-ce/linux/debian/ buster stable' |  tee /etc/apt/sources.list.d/docker.list
+ 
+apt-get update
+ 
+apt-get install docker-ce
+
+---
+
 docker run -dit --name mynginx -p 80::80  nginx:latest
 
 docker build -t  [镜像名] .
@@ -272,4 +290,19 @@ docker pull dperson/samba
 docker run -it --name samba -p 139:139 -p 445:445 -v //home/share:/mount -d dperson/samba -u "user;pass" -s "share;/mount/;yes;no;no;all;none"
 
 ---
+nessus
+
+docker pull leishianquan/awvs-nessus:v4
+
+docker run -it -d -p 13443:3443 -p 8834:8834 leishianquan/awvs-nessus:v4
+
+/etc/init.d/nessusd start user:leishi,pass:leishianquan
+
+---
+kali
+
+docker run --name kali -t -d kalilinux/kali-rolling:latest
+
+---
+
 
