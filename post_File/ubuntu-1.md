@@ -133,6 +133,28 @@ Ngrok
 
 ---
 
+kali-docker
+
+apt-get update
+ 
+apt-get install -y apt-transport-https ca-certificates
+ 
+apt-get install dirmngr
+
+curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -
+
+echo 'deb https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/ buster stable' | sudo tee /etc/apt/sources.list.d/docker.list
+
+apt-get update
+
+apt install docker-ce
+
+service docker start
+
+apt install docker-compose
+
+---
+
 [root@host sbin]# echo $PATH
 
 /usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/vurtne/bi
