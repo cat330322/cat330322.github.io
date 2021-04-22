@@ -1,4 +1,4 @@
-# ubuntu-01
+# ubuntu
 
 ---
 
@@ -42,18 +42,6 @@ screenfetch
 sudo apt install apt-transport-https ca-certificates
 
 ---
-
-20.04
-
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal main restricted universe multiverse
-
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-updates main restricted universe multiverse
-
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-backports main restricted universe multiverse
-
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ focal-security main restricted universe multiverse
-
----
 20.10
 
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy main restricted universe multiverse
@@ -69,12 +57,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ groovy-security main restricted
 apt-cache search 软件包名
 
 apt-cache show 软件包名
-
----
-
-apt-get install fcitx 
-
-apt-get install fcitx-googlepinyin
 
 ---
 
