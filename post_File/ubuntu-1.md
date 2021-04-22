@@ -2,10 +2,37 @@
 
 ---
 
-ssh-keygen -t rsa 
+useradd -m username1
+
+usermod -a -G sudo username1
+
+chsh -s /bin/bash usern
+
+userdel -r usern
 
 ---
 
+fcitx
+
+sudo apt install fcitx
+
+sudo apt install fcitx-googlepinyin 
+
+按win键，输入input method，回车
+
+选择fcitx
+
+reboot
+
+fcitx configuration
+
+---
+
+vi /etc/hosts
+
+192.30.255.113 github.com
+
+---
 neofetch
 
 screenfetch
