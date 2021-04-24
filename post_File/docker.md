@@ -305,4 +305,10 @@ docker run --name kali -t -d kalilinux/kali-rolling:latest
 
 ---
 
+v2ray 
+
+sudo docker pull v2ray/official
+
+sudo docker run -d --name v2ray -v /home/v2ray:/etc/v2ray -p 11080:11080 v2ray/official  v2ray -config=/etc/v2ray/config.json
+
 
