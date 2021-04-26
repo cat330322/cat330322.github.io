@@ -1,0 +1,30 @@
+[
+    {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+            "domain:taobao.com",
+            "domain:jd.com"
+        ]
+    }
+]
+
+---
+
+
+[
+    {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+            "domain:taobao.com"
+        ]
+    }，
+    {
+        "type": "field",
+        "outboundTag": "direct",
+        "ip": [
+            "192.168.0.0/16"
+        ]
+    }
+]

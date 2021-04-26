@@ -311,4 +311,4 @@ sudo docker pull v2ray/official
 
 sudo docker run -d --name v2ray -v /home/v2ray:/etc/v2ray -p 11080:11080 v2ray/official  v2ray -config=/etc/v2ray/config.json
 
-
+sudo docker run -d --name v2ray2 -v /home/v2ray2:/etc/v2ray -p 21080:21080 v2ray/official  v2ray -config=/etc/v2ray/config.json

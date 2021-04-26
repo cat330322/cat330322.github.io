@@ -1,0 +1,39 @@
+{
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": { // settings 的根据实际情况修改
+        "vnext": [
+          {
+            "address": "1.1.1.1",
+            "port": 8888,
+            "users": [
+              {
+                "alterId": 64,
+                "id": "b12614c5-5ca4-4eba-a215-c61d642116ce"
+              }
+            ]
+          }
+        ]
+      },
+      "proxySettings": {
+          "tag": "transit"  // 这里的 tag 必须跟作为代理 VPS 的 tag 一致，这里设定的是 "transit"
+        }
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "2.2.2.2",
+            "method": "aes-256-cfb",
+            "ota": false,
+            "password": "password",
+            "port": 1024
+          }
+        ]
+      },
+      "tag": "transit"
+    }
+  ]
+}
