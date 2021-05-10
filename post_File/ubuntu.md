@@ -104,25 +104,6 @@ apt install open-vm-tools
 
 apt install open-vm-tools-desktop
 
----
-
-archlinux
-
-sudo pacman-mirrors -i -c China -m rank 
-
-sudo pacman -Syy
-
-pacman -S archlinux-keyring
-
-/etc/pacman.conf
-
-[archlinuxcn]
-
-SigLevel = Optional TrustedOnly
-
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-
-sudo pacman -S archlinuxcn-keyring
 
 ---
 
@@ -136,94 +117,9 @@ pacman -S fcitx-im fcitx-configtool fcitx-googlepinyin
 
 tools
 
-whireshark htop mtr 
+wireshark htop mtr 
 
 Ngrok
 
----
-
-kali-docker
-
-apt-get update
- 
-apt-get install -y apt-transport-https ca-certificates
- 
-apt-get install dirmngr
-
-curl -fsSL https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -
-
-echo 'deb https://mirrors.tuna.tsinghua.edu.cn/docker-ce/linux/debian/ buster stable' | sudo tee /etc/apt/sources.list.d/docker.list
-
-apt-get update
-
-apt install docker-ce
-
-service docker start
-
-apt install docker-compose
-
----
-
-[root@host sbin]# echo $PATH
-
-/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/usr/bin:/bin:/usr/X11R6/bin:/home/vurtne/bi
-
-ln -s /usr/bin/lscpu /usr/local/bin/
-
-[root@host home]# whereis fdisk
-
-fdisk: /sbin/fdisk /usr/share/man/man8/fdisk.8.gz
-
-ln -s /usr/sbin/* /usr/local/bin/
-
----
-
-/etc/netplan/00-installer-config.yaml
-
-network:
-
-  ethernets:
-  
-    enp0s3:
-    
-      dhcp4: true
-      
-  version: 2
-
----
-
-network:
-
-  ethernets:
-  
-    enp0s3:
-    
-      dhcp4: true
-      
-    enp0s8:
-    
-      dhcp4: true
-      
-  version: 2
-
----
-
-network:
-
-  version: 2
-  
-  renderer: networkd
-  
-  ethernets:
-  
-    ens160:
-    
-     addresses:
-     
-       - 10.200.0.237/24
-       
-     gateway4: 10.200.0.1
-     
-     nameservers:
 
 
