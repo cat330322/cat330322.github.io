@@ -11,6 +11,16 @@ display lldp neighbor-information lis
 
 ---
 
+黑名单
+
+display wlan blacklist
+
+wlan static-blacklist mac-address
+
+undo wlan static-blacklist mac-address
+
+---
+
 ###config-tftp
 
 tftp 172.17.254.1 get 
