@@ -1,4 +1,4 @@
-# Git
+# git
 ---
 
 ssh-keygen -t rsa 
@@ -18,6 +18,8 @@ git remote add origin git@github.com:cat330322/cat330322.github.io.git
 git push -u origin master
 
 git status
+
+git pull 从远程更新到本地
 
 ---
 
