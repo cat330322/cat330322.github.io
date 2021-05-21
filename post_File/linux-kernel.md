@@ -1,6 +1,5 @@
-linux_kernel_0
+linux-kernel
 ---
-
 GRUB 2 和 syslinux
 
 ---
