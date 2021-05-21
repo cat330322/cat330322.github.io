@@ -289,6 +289,8 @@ docker pull dperson/samba
 
 docker run -it --name samba -p 139:139 -p 445:445 -v //home/share:/mount -d dperson/samba -u "user;pass" -s "share;/mount/;yes;no;no;all;none"
 
+chmod 777 /home/share
+
 ---
 nessus
 
