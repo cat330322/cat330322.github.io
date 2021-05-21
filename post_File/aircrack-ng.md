@@ -1,7 +1,5 @@
-#wifi-ceshi
-
+wifi-ceshi
 ---
-
 aircrack-ng 破解WEP以及WPA（字典攻击）密钥
 
 airdecap-ng通过已知密钥来解密WEP或WPA嗅探数据

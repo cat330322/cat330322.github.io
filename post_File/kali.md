@@ -55,4 +55,16 @@ ceshi
 ---
 信息收集
 
-扫描端口nmap -Ss  -p 80-88 -v 1.1.1.1
+nmap -Ss  -p 80-88 -v 1.1.1.1	扫描端口
+
+nmap -sS 10.x.x.x //usually
+
+nmap -A -O -sV -p 443  --script=vuln 10.x.x.x //vuln
+
+Masscan 10.11.0.0/16 –top-ports 100 > results.txt
+
+fping -a -g 192.168.169.0/24
+
+hping3 172.28.1.1 -S -V -c 100 -p 80
+
+
