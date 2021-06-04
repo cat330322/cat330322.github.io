@@ -139,28 +139,6 @@ docker run -d -it -P
 
 ---
 
-mysql
-
-mysql -u root -p
-
-show databases;
-
-use wordpress;
-
-show tables;
-
-desc wp_users;
-
-select *from wp_user;
-
-UPDATE wp_users SET user_pass = MD5( '123456' ) WHERE user_login = 'admin';
-
----
-
-# docker registry
-
----
-
 # docker本地仓库搭建
 
 docker pull registry
