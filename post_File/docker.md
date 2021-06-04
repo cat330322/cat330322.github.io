@@ -139,7 +139,7 @@ docker run -d -it -P
 
 ---
 
-###mysql
+mysql
 
 mysql -u root -p
 
