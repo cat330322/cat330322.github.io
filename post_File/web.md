@@ -136,3 +136,17 @@ https://s.threatbook.cn/
 https://whois.domaintools.com/
 
 https://tool.chinaz.com/
+
+---
+学习 
+
+http://www.cnitpm.com/xg/ 信管网
+
+http://www.mianshigee.com/ 面试网
+
+https://wooyun.js.org/
+
+---
+java
+
+https://github.com/saysky/ForestBlog java开源项目
