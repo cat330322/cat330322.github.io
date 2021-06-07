@@ -23,6 +23,23 @@ select *from wp_user;
 
 UPDATE wp_users SET user_pass = MD5( '123456' ) WHERE user_login = 'admin';
 
+修改加密规则
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;
+
+更新用户密码
+
+ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'passwordt';.
+
+刷新权限
+
+FLUSH PRIVILEGES;
+
+重置密码
+
+alter user 'root'@'localhost'  identified by '1234567';
+
+---
 
 一、导出数据库用mysqldump命令（注意mysql的安装路径，即此命令的路径）：
 
