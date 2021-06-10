@@ -44,6 +44,8 @@ CNPM
 
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 
+npm install --registry=https://registry.npm.taobao.org
+
 cnpm install -g @vue/cli
 
 vue ui
