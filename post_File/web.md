@@ -1,5 +1,12 @@
 # web
 ---
+java
+
+https://github.com/Antabot/White-Jotter
+
+https://learner.blog.csdn.net/article/details/88925013
+
+---
 
 linux 自动化检测
 
