@@ -1,4 +1,4 @@
-# docker
+docker
 
 ---
 
@@ -138,8 +138,7 @@ docker run -d -it -p 8888:8888 -p 80:80 -p --net=bridge-local --ip=172.1.1.150  
 docker run -d -it -P 
 
 ---
-
-# docker本地仓库搭建
+docker本地仓库搭建
 
 docker pull registry
 
@@ -190,7 +189,7 @@ docker pull  127.0.0.1:5000/busybox-test //从本地镜像下载。
 
 ---
 
-#dokcer-bind
+bind DNS服务
 
 docker-sameersbn/bind
 
@@ -216,7 +215,6 @@ docker run --name bind13 -d --restart=always \
 sameersbn/bind
 
 ---
-
 netstat -anp 查看端口
 
 kill -9 pid
@@ -263,7 +261,7 @@ docker run -d --name hfish -p  23:23 -p 69:69 -p 3306:3306 -p 5900:5900 -p 6379:
 ---
 samba
 
-docker pull dperson/samba
+docker pull dperson/samba 
 
 docker run -it --name samba -p 139:139 -p 445:445 -v //home/share:/mount -d dperson/samba -u "user;pass" -s "share;/mount/;yes;no;no;all;none"
 
@@ -292,3 +290,25 @@ sudo docker pull v2ray/official
 sudo docker run -d --name v2ray -v /home/v2ray:/etc/v2ray -p 11080:11080 v2ray/official  v2ray -config=/etc/v2ray/config.json
 
 sudo docker run -d --name v2ray2 -v /home/v2ray2:/etc/v2ray -p 21080:21080 v2ray/official  v2ray -config=/etc/v2ray/config.json
+
+---
+redis
+
+docker pull redis
+
+docker run -itd --name redis1 -p 6379:6379 redis
+
+/etc/init.d/redis-server restart
+
+redis-cli -a abc
+
+redis-cli -h 127.0.0.1 -p 6379
+
+---
+mysql
+
+docker pull mysql
+
+sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=xx -d mysql:5.7
+
+mysql -h 127.0.0.1 -P 3306 -uroot -p123456

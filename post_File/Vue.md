@@ -1,7 +1,31 @@
 Vue
 
 ---
+JDK >= 1.8 (推荐1.8版本)
 
+sudo apt install openjdk-8-jdk
+
+Mysql >= 5.7.0 (推荐5.7版本)
+
+sudo apt-get install mysql-server
+
+Redis >= 3.0
+
+sudo apt-get install redis-server
+
+Maven >= 3.0
+
+wget https://mirrors.tuna.tsinghua.edu.cn/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+
+
+Node >= 10
+
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+
+---
 sudo apt update
 
 sudo apt-get update
@@ -67,7 +91,6 @@ element-ui
 cnpm insall element-ui
 
 ---
-11
 结构大纲
 
 |-- build                            // 项目构建(webpack)相关代码

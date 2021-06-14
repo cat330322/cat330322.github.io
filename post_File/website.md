@@ -1,13 +1,12 @@
 # web
 ---
-java
+windows download
 
-https://github.com/Antabot/White-Jotter
+https://www.imsdn.cn/
 
-https://learner.blog.csdn.net/article/details/88925013
+https://msdn.itellyou.cn/
 
 ---
-
 linux 自动化检测
 
 https://github.com/grayddq/GScan	github
@@ -154,6 +153,3 @@ http://www.mianshigee.com/ 面试网
 https://wooyun.js.org/
 
 ---
-java
-
-https://github.com/saysky/ForestBlog java开源项目

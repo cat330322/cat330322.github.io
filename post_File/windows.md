@@ -1,15 +1,6 @@
-windows download
+windows
 
 ---
-
-https://www.imsdn.cn/
-
-https://msdn.itellyou.cn/
-
----
-
-
-Recon
 
 netstat -o 4
 
