@@ -1,7 +1,7 @@
 # h3c
 ---
 
-###transceiver
+transceiver
 
 display transceiver diagnosis interface Ten-GigabitEthernet 
 
@@ -21,7 +21,7 @@ undo wlan static-blacklist mac-address
 
 ---
 
-###config-tftp
+config-tftp
 
 tftp 172.17.254.1 get 
 
