@@ -40,6 +40,17 @@ apt-get update
 apt-get install docker-ce
 
 ---
+docker镜像迁移
+
+docker save mynewimage > /tmp/mynewimage.tar
+
+docker load < /tmp/mynewimage.tar
+
+docker save -o [image].tar
+
+docker load -i [image].tar
+
+---
 
 docker run -dit --name mynginx -p 80::80  nginx:latest
 
@@ -138,6 +149,70 @@ docker run -d -it -p 8888:8888 -p 80:80 -p --net=bridge-local --ip=172.1.1.150  
 docker run -d -it -P 
 
 ---
+docker离线安装
+
+下载地址：https://download.docker.com/linux/static/stable/x86_64/
+
+tar xvf docker-19.03.9.tgz
+
+ls -l docker
+
+mv docker/* /usr/bin/
+
+vim /etc/systemd/system/docker.service
+
+添加文件内容：
+
+[Unit]
+
+Description=Docker Application Container Engine
+
+Documentation=https://docs.docker.com
+
+After=network-online.target firewalld.service
+
+Wants=network-online.target
+
+ 
+
+[Service]
+
+Type=notify
+
+ExecStart=/usr/bin/dockerd
+
+ExecReload=/bin/kill -s HUP $MAINPID
+
+LimitNOFILE=infinity
+
+LimitNPROC=infinity
+
+TimeoutStartSec=0
+
+Delegate=yes
+
+KillMode=process
+
+Restart=on-failure
+
+StartLimitBurst=3
+
+StartLimitInterval=60s
+
+
+[Install]
+
+WantedBy=multi-user.target
+
+chmod +x /etc/systemd/system/docker.service
+
+systemctl daemon-reload 
+
+systemctl enable docker.service
+
+systemctl start docker
+
+---
 docker本地仓库搭建
 
 docker pull registry
@@ -188,8 +263,7 @@ docker rmi 127.0.0.1:5000  //busybox-test 删除镜像
 docker pull  127.0.0.1:5000/busybox-test //从本地镜像下载。
 
 ---
-
-bind DNS服务
+docker bind
 
 docker-sameersbn/bind
 
@@ -204,8 +278,6 @@ docker run --name bind -d --restart=always \
 
 sameersbn/bind:latest
 
-
-
 docker run --name bind13 -d --restart=always \
 
 --volume /srv/docker/bind13:/data \
@@ -215,14 +287,7 @@ docker run --name bind13 -d --restart=always \
 sameersbn/bind
 
 ---
-netstat -anp 查看端口
-
-kill -9 pid
-
-/usr/bin/perl /usr/share/webmin/miniserv.pl /etc/webmin/miniserv.conf 启动进程
-
-
----
+docker-awvs
 
 docker pull secfa/docker-awvs
 
@@ -231,24 +296,6 @@ docker run -it -d -p 13443:3443 secfa/docker-awvs
 awvs13 username:admin@admin.com
 
 awvs13 password: Admin123
-
----
-
-docker run -d -p 443:443 -e PUBLIC_HOSTNAME=此处填你宿主机IP --name  openvas mikesplain/openvas 
-
---cpus=4
-
-信息收集
-
-openvasmd --create-user=admin
-
-User created with password '462972b7-02fc-4a0b-a585-e86801cc52b3'.
-
-openvasmd --create-user=用户名 *//创建用户*
-
-openvasmd --delete-user=用户名 *//删除用户*
-
-openvasmd --user=admin --new-password=新密码 *//直接修改admin用户的密码*
 
 ---
 
