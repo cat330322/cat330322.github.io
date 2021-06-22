@@ -359,3 +359,13 @@ docker pull mysql
 sudo docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=xx -d mysql:5.7
 
 mysql -h 127.0.0.1 -P 3306 -uroot -p123456
+
+---
+zabbix
+
+docker pull zabbix/zabbix-web-nginx-mysql:centos-latest
+
+docker run --name zabbix-appliance -t  -p 10051:10051 -p 80:80 -d zabbix/zabbix-appliance:latest
+
+（默认用户Admin,密码zabbix）
+
