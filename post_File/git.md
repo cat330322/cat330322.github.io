@@ -13,6 +13,8 @@ git commit -m "first commit"
 
 git branch -M main
 
+git add -p 
+
 git remote add origin git@github.com:cat330322/cat330322.github.io.git
 
 git push -u origin master
