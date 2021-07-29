@@ -1,10 +1,18 @@
-# web
+# website
 ---
 windows download
 
 https://www.imsdn.cn/
 
 https://msdn.itellyou.cn/
+
+https://www.catalog.update.microsoft.com/Home.aspx 补丁
+
+---
+
+linux
+
+https://vault.centos.org/
 
 ---
 linux 自动化检测
