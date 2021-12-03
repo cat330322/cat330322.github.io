@@ -1,7 +1,0 @@
-# jq
-
----
-
-jq . config.json
-
-$ /usr/bin/v2ray/v2ray -test -config /etc/v2ray/config.json
