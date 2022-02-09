@@ -17,12 +17,20 @@ $ apt-get install vim
 root@21e1ca6037f8:/etc/nginx/conf.d# vim default.conf
 
 server{
+
        listen 80;
+
        charset utf-8;
+
        server_name 192.168.112.135;
 
+
        location / {
+
           proxy_pass http://192.168.112.135:8080;
+
           proxy_redirect default;
+          
        }
+
     }
