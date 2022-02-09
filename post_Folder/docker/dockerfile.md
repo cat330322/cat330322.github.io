@@ -174,3 +174,37 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 228c1f5b8070        nginx:new           "/run.sh"                9 seconds ago       Up 8 seconds                  0.0.0.0:32770->80/tcp, 0.0.0.0:32769->443/tcp   busy_booth
 
 ##用浏览器访问网页
+
+
+
+FROM ubuntu
+
+ENV TZ Asia/Shanghai
+
+ENV LANG zh_CN.UTF-8
+
+RUN sed -i 's#http://archive.ubuntu.com/#http://cn.archive.ubuntu.com/#' /etc/apt/sources.list
+
+RUN apt-get update && \
+
+apt-get -y install vim && \
+
+apt-get -y install openssh-server && \
+
+apt-get clean && \
+
+rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
+
+RUN echo 'root:root' |chpasswd
+
+RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
+
+RUN mkdir /var/run/sshd
+
+EXPOSE 2299
+
+#Start ssh Service
+
+CMD ["/usr/sbin/sshd", "-D"]
