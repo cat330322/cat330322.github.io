@@ -1,15 +1,14 @@
- git
+ #git
 ---
 
+##ssh-keygen
 ssh-keygen -t rsa 
 
 ---
 
-git init
-
-git add .
-
-git commit -m "first commit"
+*git init
+*git add .
+*git commit -m "first commit"
 
 git branch -M main
 
