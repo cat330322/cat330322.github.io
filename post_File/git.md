@@ -1,4 +1,4 @@
- #git
+git
 ---
 
 ##ssh-keygen
@@ -21,6 +21,10 @@ git remote add origin git@github.com:cat330322/cat330322.github.io.git
 git push -u origin master
 
 git pull 从远程更新到本地
+
+git@gitee.com:cat330322/demolx.git
+
+git config --global core.autocrlf false
 
 ---
 
