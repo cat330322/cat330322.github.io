@@ -1,3 +1,5 @@
+
+
 File	File 菜单运行你打开文件，关闭编辑器，保存编辑的内容，重命名文件。 此外还可以导入和导出工作区的内容及关闭 Eclipse。
 
 Edit	Edit 菜单有复制和粘贴等功能。
@@ -20,9 +22,12 @@ JAVA
 
 E:\apache-tomcat-10.0.8\webapps\myweb> jar cvf e:\myweb.war .
 
-
 ==========
 vue
+
+Eclipse
+
+====
 
 npm -i -g @vue/cli@next   升级vue到v4.5
 
@@ -38,22 +43,23 @@ npm install -g @vue/cli@next
 
 vue upgrade --next
 
-npm init vite-app <project-name>
+npm init vite-app `<project-name>`
 
-cd <project-name>
+cd `<project-name>`
 
 npm install
 
 npm run dev
----------------------------
-$ yarn create vite-app <project-name>
+-----------
 
-$ cd <project-name>
+$ yarn create vite-app `<project-name>`
+
+$ cd `<project-name>`
 
 $ yarn
 
 $ yarn dev
-------------------------
+----------
 
 vite安装
 
@@ -65,10 +71,10 @@ cd hello
 
 yarn
 
-yarn dev 
+yarn dev
 
 秒启动
 
------------------------
+---
 
 vue create hello  手动创建
