@@ -1,3 +1,17 @@
+# IDEA
+
+- IDEA开机不自动打开项目
+- File-settings界面中，选中 system settings 选项
+- 去掉 reopen last project on startup 选项
+- IDEA破解
+
+[- https://plugins.zhile.io](https://link.zhihu.com/?target=https://plugins.zhile.io)
+
+- ide eval reset
+
+
+
+### Eclipse
 
 
 File	File 菜单运行你打开文件，关闭编辑器，保存编辑的内容，重命名文件。 此外还可以导入和导出工作区的内容及关闭 Eclipse。

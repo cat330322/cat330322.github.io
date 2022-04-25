@@ -1,13 +1,14 @@
 # h3c
+
 ---
 
-transceiver
+1. transceiver
 
-display transceiver diagnosis interface Ten-GigabitEthernet 
+2. display transceiver diagnosis interface Ten-GigabitEthernet
 
-display transceiver interface Ten-GigabitEthernet
+3. display transceiver interface Ten-GigabitEthernet
 
-display lldp neighbor-information lis
+4. display lldp neighbor-information lis
 
 ---
 
@@ -23,9 +24,9 @@ undo wlan static-blacklist mac-address
 
 config-tftp
 
-tftp 172.17.254.1 get 
+tftp 172.17.254.1 get
 
-startup saved-configuration startup.cfg 
+startup saved-configuration startup.cfg
 
 dir /all //命令查看设备的配置文件。
 
@@ -39,12 +40,9 @@ backup startup-configuration to 192.168.125.149 aaa.cfg或tftp 192.168.125.149 p
 
 reset save-configuration命令彻底删除设备保存的启动配置。
 
-
 restore startup-configuration from 192.168.1.2 tiyukantai.cfg
 
-
 删除startup.cfg文件，使用reset recycle-bin命令清空回收站，
-
 
 startup saved-configurationcfg tiyukantai.cfg
 
@@ -70,7 +68,7 @@ set authentication password simp co
 
 wlan rename-ap old new
 
-wlan auto-ap enable 
+wlan auto-ap enable
 
 wlan auto-persistent enable
 
@@ -112,8 +110,7 @@ display dhcp server ip-in-use all查看用户地址池已经分配出去的地�
 
 ---
 
-h3c 
-
+h3c
 
 dis ll nei list
 
@@ -236,5 +233,3 @@ display ip interface brief命令用来显示三层接口与IP相关的简要信�
 display fib 命令用来显示FIB表项的信息。
 
 display route-static routing-table命令用来显示静态路由表信息。
-
-
