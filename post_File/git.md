@@ -4,15 +4,13 @@
 
 - ssh-keygen -t rsa
 
----
+## git命令
 
-*git init
-*git add .
-*git commit -m "first commit"
+git init 初始化
+git add .
+git commit -m "first commit"
 
 git branch -M main
-
-git add -p
 
 git status
 
