@@ -12,7 +12,37 @@ https://msdn.itellyou.cn/
 
 https://www.catalog.update.microsoft.com/Home.aspx 补丁
 
----
+
+| 序号 | 开发网址                   | 名称  |
+| ---- | -------------------------- | ----- |
+| 1    | https://mvnrepository.com/ | maven |
+|      |                            |       |
+
+
+| 序号 | 开源项目 | 名称col |
+| ---- | -------- | ------- |
+| 1    | 名称     | 若依    |
+| 2    |          |         |
+
+
+| 序号 | 开源网址                                                         | 名称                                      |
+| ---- | ---------------------------------------------------------------- | ----------------------------------------- |
+| 1    | [https://www.wangeditor.com/wangEdito](https://www.wangeditor.com/) | 开源 Web 富文本编辑器，开箱即用，配置简单 |
+| 2    |                                                                  |                                           |
+
+
+| 序号 | 应用网址                             | 名称                           |
+| ---- | ------------------------------------ | ------------------------------ |
+| 1    | https://serverlesscloud.cn/resource/ | 云函数无服务，serverless中文网 |
+| 2    | https://pandao.github.io/editor.md/  | 开源在线markdown               |
+| 3    | https://mastergo.com/                | UI设计                         |
+| 4    | https://huatu.98youxi.com/lct/       | 画流程图、思维导图             |
+| 5    | https://pixso.cn/                    | UI设计                         |
+| 6    | http://www.u.tools/                  | 既是插件也是应用               |
+| 7    | http://www.fhdq.net/                 | 符号大全                       |
+|      | https://www.iconfont.cn/             | iconfont                       |
+
+
 
 linux
 
