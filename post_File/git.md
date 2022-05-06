@@ -67,10 +67,10 @@ git checkout <文件路径> //替换掉本地的改动，新增的文件和已�
 
 ### git cherry-pick
 
-````git cherry-pick `<commit ID>`  //把已经提交的记录合并到当前分支```
+```git cherry-pick `<commit ID>`  //把已经提交的记录合并到当前分支```
 
 ###  git add
-```git add <文件路径> //把指定的文件添加到暂存区中
+```
 git add -u [<文件路径>] //添加所有修改、已删除的文件到暂存区中
 git add -A [<文件路径>]//查看所有修改、已删除但没有提交的文件，进入一个子命令系统
 git add -i [<文件路径>]
@@ -86,8 +86,6 @@ git diff   "分支名称"or"分支名称" //比较两个分支之间的差异
 git diff <分支名称>...<分支名称> //查看两个分支分开后各自的改动内容
 ```
 
-
-
 ### git push
 ```
 git push <远程仓库的别名> <本地分支名>:<远程分支名> //把本地仓库的分支推送到远程仓库的指定分支
@@ -95,72 +93,60 @@ git push <远程仓库的别名> :<远程分支名>
 git push <远程仓库的别名> --delete <远程分支名>``
 ```
 
-###  git log
+###   git log
 
+```
 git log 打印所有的提交记录
-
 git log  "commit ID"//打印从第一次提交到指定的提交的记录
-
 git log -指定的数量//打印指定数量的最新提交的记录
+```
 
----
+###  git reset
 
-git reset
-
+```
 重置暂存区，但文件不受影响
-
 git reset --mixed 文件路径>] //相当于将用 "git add" 命令更新到暂存区的内容撤出暂存区，可以指定文件
-
 git reset --mixed  commit-ID 将 HEAD 的指向改变，撤销到指定的提交记录，文件未修改
-
 git reset --soft [commit ID] 相当于调用 "git reset --mixed" 命令后又做了一次 "git add"
-
 git reset --hard [commit-ID]将 HEAD 的指向改变，撤销到指定的提交记录，文件也修改了
+```
 
----
+###  git revert
 
-git revert
+```
 git revert  commit-ID //生成一个新的提交来撤销某次提交
+```
 
----
+### git tag
 
-git tag
-
+```
 git tag //打印所有的标签
-
 git tag 标签名称 commit ID 添加轻量标签，指向提交对象的引用，可以指定之前的提交记录
-
 git tag -a 标签名称 -m 标签描述信息  commit ID//添加带有描述信息的附注标签，可以指定之前的提交记录
-
 git checkout 标签名称//切换到指定的标签
-
 git show 标签名称 //查看标签的信息
-
 git tag -d  标签名称 //删除指定的标签
-
 git push 远程仓库的别名  标签名称 将指定的标签提交到远程仓库
-
 git push 远程仓库的别名 –tags //将本地所有的标签全部提交到远程仓库
+```
 
----
+###  git mv
 
-git mv
+```
 git mv  源文件/文件夹  目标文件/文件夹  //重命名指定的文件或者文件夹
+```
 
----
+###  git rm
 
-git rm
+```
 git rm 文件路径 //移除跟踪指定的文件，并从本地仓库的文件夹中删除
-
 git rm -r 文件夹路径 //移除跟踪指定的文件夹，并从本地仓库的文件夹中删除
-
 git rm --cached //移除跟踪指定的文件，在本地仓库的文件夹中保留该文件
+```
 
----
+###  Git操作场景示例删除掉本地不存在的远程分支
 
-Git操作场景示例删除掉本地不存在的远程分支
+```
 多人合作开发时，如果远程的分支被其他开发删除掉，在本地执行 git branch --all 依然会显示该远程分支，可使用下列的命令进行删除：
-
 git pull -p //使用 pull 命令，添加 -p 参数
-
----
+```
