@@ -1,6 +1,7 @@
 ### docker
 
 ```
+###
 利用docker commit新构镜像
 1、停止docker容器
 docker stop container01
@@ -8,11 +9,8 @@ docker stop container01
 docker commit container01 new_image:tag
 3、用前一步新生成的镜像重新起一个容器
 docker run --name container02 -p 80:80 new_image:tag
-```
 
-##### 发布网站
-
-```
+###发布网站
 npm安装包
 npm config set registry https://registry.npm.taobao.org
 npm install yarn
@@ -24,12 +22,8 @@ FROM nginx
 将dist文件中的内容复制到 /usr/share/nginx/html/ 这个目录下面
 COPY dist/  /usr/share/nginx/html/ 
 docker run --name=dockervue -d -p 8088:80 20211202
-```
 
-##### docker pull Registry
-
-```
-## 启动
+###docker pull Registry
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
 关闭并删除容器
 docker stop registry
@@ -45,11 +39,9 @@ docker image remove nginx:1.19.4
 docker image remove localhost:5000/my-nginx
 ## 本地仓库拉取
 docker pull localhost:5000/my-nginx
-```
 
-##### 内网拉取镜像
-
-```
+###
+内网拉取镜像
 1、找一个外网电脑拉取镜像
 docker pull xxxx
 2、将镜像打包为tar包
@@ -78,34 +70,25 @@ http://ip:5000/v2/_catalog
 }
  systemctl restart docker
  systemctl start docker
-```
-
-##### 从仓库拉取镜像
-
-```
+ 
+###
+从仓库拉取镜像
 docker pull myregistry.vechain.com:5000/my-nginx
 docker pull myregistry.vechain.com:5000/bdms-scheduler
 docker tag old new
-```
 
-##### docker pull redis
-
-```
+###
+docker pull redis
 docker run -itd --name redis20220127 -p 6379:6379 redis
-```
 
-#####  docker-owncloud
-
-```
+###docker-owncloud
 docker run --name owncloud-mysql -p 3000:3306 -e MYSQL\_ROOT\_PASSWORD=caixianjie -d mysql
 docker run --name owncloud -p 80:80 --link owncloud-mysql:db -d  owncloud
 docker run --name mysql -p 3000:3306-e MYSQL_ROOT_PASSWORD=root -d mysql:5.7
 docker run --name owncloud --link mysql:mysql -d -p 80:80 owncloud
-```
 
-##### docker-jdk
-
-```
+###
+docker-jdk
 docker pull ubuntu
 dockerfile
 FROM ubuntu-ssh
@@ -131,11 +114,9 @@ Linux运行jar包
 >temp.out的意思是将日志输出重定向到temp.out文件，使用ctrl+c中断或者关闭窗口都不会中断程序的执行。
  mysql -u root -p -D xzs < /usr/local/xzs/sql/xzs-mysql.sql
  nohup java -Duser.timezone=Asia/Shanghai -jar -Dspring.profiles.active=prod  xzs-3.5.0.jar  > start1.log  2>&1 &
-```
-
-##### docker pull nginx
-
-```
+ 
+###
+docker pull nginx
 docker run -d --name mynginx -p 80:80 nginx
 docker exec -it 21e1 /bin/bash
 进入到nginx容器内部后，我们可以cd /etc/nginx，可以看到相关的nginx配置文件都在/etc/nginx目录下
@@ -153,13 +134,8 @@ server{
       proxy_redirect default;
    }
 }
-```
 
-  
-
-##### docker pull mysql
-
-```
+###docker pull mysql
 docker run
     -p 3306:3306
     -e MYSQL_ROOT_PASSWORD=localDocker@mysql
@@ -208,21 +184,15 @@ select * from hero limit 0,5 分页查询
 update hero set hp = 818 where id = 1 修改表
 ========================
 delete from hero where id = 1 删除数据
-```
 
-##### docker pull gitlab/gitlab-ce
-
-```
+###docker pull gitlab/gitlab-ce
 $ docker run -d  -p 443:443 -p 80:80 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
 -d：后台运行
 -p：将容器内部端口向外映射
 --name：命名容器名称
 -v：将容器内数据文件夹或者日志、配置等文件夹挂载到宿主机指定目录
-```
 
-##### Alpine源配置文件
-
-```
+###Alpine源配置文件
 / # cat /etc/apk/repositories
 http://dl-cdn.alpinelinux.org/alpine/v3.11/main
 http://dl-cdn.alpinelinux.org/alpine/v3.11/community
@@ -236,11 +206,8 @@ FROM alpine
 RUN echo "https://mirrors.aliyun.com/alpine/v3.6/main/" > /etc/apk/repositories; \
 echo "https://mirrors.aliyun.com/alpine/v3.6/community/" >> /etc/apk/repositories; \
 apk add curl
-```
 
-##### docker-baota
-
-```
+###docker-baota
 docker run --name baota -id -p 18888:8888 -p 180:80 -p 1888:888 -p 121:21 -p 122:22 ubuntu-ssh
 apt update 
 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh
@@ -252,11 +219,9 @@ bt restart
 bt 6
 配置密码
 bt 5
-```
 
-##### docker-compose
 
-```
+###
 docker-compose      # 拉取镜像
 docker-compose up -d nginx     # 运行nginx容器
 docker-compose up -d     # 运行所有容器
@@ -297,11 +262,9 @@ MySQL
 docker-compose -f docker-compose-mysql5.7.yml -p mysql5.7 up -d
 8.0
 docker-compose -f docker-compose-mysql8.0.yml -p mysql8.0 up -d
-```
 
-##### dockerfile
-
-```
+###
+dockerfile
 FROM nginx
 RUN echo '这是一个本地构建的nginx镜像' > /usr/share/nginx/html/index.html
 RUN yum -y install wget
@@ -407,4 +370,3 @@ EXPOSE 2299
 #Start ssh Service
 CMD ["/usr/sbin/sshd", "-D"]
 ```
-
