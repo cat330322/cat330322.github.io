@@ -189,6 +189,23 @@ inputs:
           endpoints:
             - path: /
               method: GET
+	      
+###vue.config.js
+module.exports = {
+  devServer:{
+    proxy:{
+      '/api':{
+        target :'http://localhost:5858',//接口域名
+        changeOrigin: true,
+        ws: true,
+        secure: true,
+        pathRewrite:{
+          '^/api':''
+        }
+      }
+    }
+  }
+};
 ```
 
 
