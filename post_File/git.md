@@ -6,7 +6,7 @@ ssh-keygen -t rsa
 
 ###
 git pull
-git pull从远程仓库获取最新版本
+git pull origin master
 
 ###git
 git init 初始化
