@@ -67,7 +67,50 @@ app.listen(5858,function(){
 	console.log('5858,mysql,中间件已经执行')
 })
 
-###
+###express_server.js
+const express =  require ('express');
+const os = require('os'); 
+const app =express();
+
+function getIpAddress() {
+    var ifaces=os.networkInterfaces()
+    for (var dev in ifaces) {
+      let iface = ifaces[dev]
+      for (let i = 0; i < iface.length; i++) {
+        let {family, address, internal} = iface[i]
+        if (family === 'IPv4' && address !== '127.0.0.1' && !internal) {
+          return address
+        }
+      }
+    }
+  }
+ let ipAddress = getIpAddress()
+
+app.use(express.static(__dirname + '/public/dist'));
+
+app.get('/get_username',function(request,response){
+    response.send({
+        name:'zhangsan'
+    })
+});
+app.get('/ip',function(request,response){
+    response.send({
+    本机IP地址:ipAddress
+    })
+});
+app.get('/get_classname',function(req,res){
+    res.send({
+        name:'1111班级'
+    })
+})
+
+app.listen(3000,function(err){
+    if(err){
+        console.log(err);
+        return;
+    }
+    console.log('服务已经启动,请访问3000')
+})
 ```
 
 
