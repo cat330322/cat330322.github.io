@@ -61,7 +61,8 @@ http://ip:5000/v2/_catalog
   "registry-mirrors": ["https://0wrdwnn6.mirror.aliyuncs.com"],
    "insecure-registries":["你的IP地址:5000"]
  }
-
+ 
+vi /etc/docker/daemon.json 
 {
    "registry-mirrors" :["http://docker.mirrors.ustc.edu.cn",
                                 "http://registry.docker-cn.com",
