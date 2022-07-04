@@ -85,6 +85,8 @@ PATH，%MAVEN_HOME%\bin
 
 ###Vue_Npm_Yarn
 npm install -g yarn --registry=https://registry.npm.taobao.org
+npm config set registry http://registry.npm.taobao.org/
+npm config get registry
 yarn config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
 yarn config set registry http://registry.npm.taobao.org
 yarn config get registry  // 查看yarn当前镜像源

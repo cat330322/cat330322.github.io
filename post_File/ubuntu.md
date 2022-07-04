@@ -2,6 +2,16 @@
 
 ```
 ###
+uname -a
+查看linux内核的版本号。
+cat /proc/version
+查看linux内核的版本号和RedHat信息。
+cat /etc/redhat-release
+查看系统安装时centos默认的发行版本信息。
+cat /etc/issue
+查看系统安装时centos默认的发行版本信息，不过貌似并没有显示出发行版本信息。
+
+###
 useradd -m username1
 usermod -a -G sudo username1
 chsh -s /bin/bash usern
