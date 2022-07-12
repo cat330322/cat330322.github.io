@@ -371,3 +371,28 @@ EXPOSE 2299
 #Start ssh Service
 CMD ["/usr/sbin/sshd", "-D"]
 ```
+
+```
+###docker-nginxfancy 资源下载容器
+docker run -it ubuntu-ssh /bin/bash
+docker run --name=nginx-fancy -d -p 7080:80 ubuntu-ssh
+docker commit 128f99ac4329  ubuntu-nginx-fancy:v1
+docker run -d -p 7070:80 --name nginx-fancy-0705  -v /root/nginx-fancy/data:/var/www/html/data ubuntu-nginx-fancy:v1
+root@128f99ac4329:/var/www/html/data# vi /etc/nginx/sites-enabled/default
+###修改配置文件
+        server_name _;
+        charset utf-8;
+        location / {
+        root /var/www/html/data;
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        autoindex on;
+        autoindex_exact_size on;
+        autoindex_localtime on;
+        charset gbk;
+        #add_header Content-Disposition attachment;
+        }
+        # pass 
+```
+
