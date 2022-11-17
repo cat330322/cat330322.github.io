@@ -7,6 +7,22 @@ https://msdn.itellyou.cn/
 https://www.catalog.update.microsoft.com/Home.aspx
 https://vault.centos.org/
 
+###护网演练
+https://ti.qianxin.com/
+https://x.threatbook.com/
+https://www.shellpub.com/
+https://www.venuseye.com.cn/ip/
+
+###vr全景视图
+www.krpano360.com
+http://gcbwg.720l.cn/效果
+
+#SpringBoot
+http://springboot.fun/
+
+#图标库网站
+http://www.fontawesome.com.cn/faicons/
+
 ###
 https://gitee.com/lkf-newlife/ruankao-xifen?_from=gitee_search
 https://www.runoob.com/
@@ -90,4 +106,7 @@ https://wooyun.js.org/
 
 ###PPT模板
 https://www.51pptmoban.com/
+
+###网络安全视频
+https://www.iqiyi.com/a_19rrhc6xad.html
 ```

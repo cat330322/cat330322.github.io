@@ -396,3 +396,20 @@ root@128f99ac4329:/var/www/html/data# vi /etc/nginx/sites-enabled/default
         # pass 
 ```
 
+```
+#docker-oracle
+docker pull registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+docker run -d -p 1521:1521 --name oracle11g registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+docker exec -it oracle11g bash
+vi /etc/profile
+export ORACLE_HOME=/home/oracle/app/oracle/product/11.2.0/dbhome_2 export ORACLE_SID=helowin export PATH=$ORACLE_HOME/bin:$PATH
+source /etc/profile
+ln -s $ORACLE_HOME/bin/sqlplus /usr/bin
+su - oracle
+sqlplus /nolog
+conn /as sysdba
+alter user system identified by oracle; alter user sys identified by oracle; ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;
+服务名：helowin（一定要填写helowin）
+密码：oracle（第12步设置的密码）
+```
+
